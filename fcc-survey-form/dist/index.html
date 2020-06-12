@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - FCC survey form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <header class="header">
+    <h1 id="title">
+        Quick Survey Form 
+    </h1>
+    <p id="description">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, dicta.
+    </p>
+  </header>
+  
+  
+  <form id="survey-form">
+    <div class="form-group">
+      <label for="name" class="name">Name</label>
+      <input name="name"type="text" id="name" class="form-control" placeholder="Enter your name" required>
+    </div>
+    <div class="form-group">
+      <label for="email" class="email">Email</label>
+      <input name="email"type="email" id="email" class="form-control" placeholder="Enter your email" required>
+    </div>
+    <div class="form-group">
+      <label for="number" class="email">Age<span class="small-text">(optional)</span></label>
+      <input name="number"type="email" id="number" class="form-control" placeholder="Enter your age" min="10" max="110">
+    </div>
+  </form>
+  
+  
+</div>
+<!-- partial -->
+  
+</body>
+</html>

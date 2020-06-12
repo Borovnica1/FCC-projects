@@ -1,0 +1,61 @@
+:root {
+  --color-text: #44444;
+  --color-blue: 13,79,139;
+  --color-skyblue: #7EC0EE;
+}
+
+*,
+*::before,
+*::after,
+*:focus {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  font-size: 1.2rem;
+  font-family: monospace;
+  color: var(--color-text);
+  background: var(--color-skyblue);
+  background-image: linear-gradient(rgba(126,192,238, 0.5), rgba(126,192,238, 0.5)), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+}
+
+.container {
+  max-width: 40%;
+  height: 1000px;
+  background: rgba(var(--color-blue), 0.7);
+  margin: 5rem auto;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.form-group {
+  width: 90%;
+  margin: .5rem auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  target: none;
+  align-self: start;
+  margin: .5rem 0;
+}
+
+.form-group input {
+  padding: 0 .5rem;
+  border-radius: 2px;
+  border: none;
+  height: 2rem;
+}
+
+.small-text {
+  font-size: 1rem;
+  margin: 0 0.3rem;
+}
