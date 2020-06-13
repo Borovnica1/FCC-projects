@@ -11,18 +11,49 @@
   
   <form id="survey-form">
     <div class="form-group">
-      <label for="name" class="name">Name</label>
-      <input name="name"type="text" id="name" class="form-control" placeholder="Enter your name" required>
+      <label for="name" id="name-label">Name</label>
+      <input name="name" type="text" id="name" class="form-control" placeholder="Enter your name" required>
     </div>
     <div class="form-group">
-      <label for="email" class="email">Email</label>
+      <label for="email" id="email-label">Email</label>
       <input name="email"type="email" id="email" class="form-control" placeholder="Enter your email" required>
     </div>
     <div class="form-group">
-      <label for="number" class="email">Age<span class="small-text">(optional)</span></label>
-      <input name="number"type="email" id="number" class="form-control" placeholder="Enter your age" min="10" max="110">
+      <label for="number" id="number-label">Age<span class="small-text">(optional)</span></label>
+      <input name="number" type="number" id="number" class="form-control" placeholder="Enter your age" min="10" max="110">
     </div>
+    <div class="form-group">
+      <label for="dropdown" class="form-control">Which option best describes you?</label>
+      <select name="role" id="dropdown" required>
+        <option disabled selected value>Choose your current role</option>
+        <option value="php-developer">Php developer</option>
+        <option value="java-developer">Java developer</option>
+        <option value="angular-developer">Angular developer</option>
+        <option value="deno-developer">Deno developer</option>
+        <option value="cpp-developer">Cpp developer</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="pets" class="pets-label">What kind of pets you like the most?</label>
+      <label><input value="dogs" name="pet" type="radio" id="pets" class="form-control" required>Dogs</label>
+      <label><input value="cats" name="pet" type="radio" id="pets" class="form-control" required>Cats</label>
+      <label><input value="horses" name="pet" type="radio" id="pets" class="form-control" required>Horses</label>
+    </div>
+    <div class="form-group">
+      <label for="pets" class="pets-label">What are your hobbies?</label>
+      <label><input name="pet" type="checkbox" value="fishing" class="form-control" required>Fishing</label>
+      <label><input name="pet" type="checkbox" value="motorcycles" class="form-control" required>Motorcycles</label>
+      <label><input name="pet" type="checkbox" value="swimming" class="form-control" required>Swimming</label>
+      <label><input name="pet" type="checkbox" value="hiking" class="form-control" required>Hiking</label>
+    </div>
+    <div class="form-group">
+      <label for="number" class="number-label">Do you have any suggestions?</label>
+      <textarea id="comment" name="comment" rows="8" maxlength="160" placeholder="Write something nice..."></textarea>
+    </div>
+    <button type="submit" id="submit">Submit</button>
   </form>
   
   
 </div>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
